@@ -1,6 +1,5 @@
 package 栈;
 
-import java.util.Iterator;
 import java.util.Stack;
 
 // https://leetcode-cn.com/problems/score-of-parentheses/
