@@ -1,6 +1,5 @@
 package 栈;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 // https://leetcode-cn.com/problems/valid-parentheses/
@@ -78,7 +77,6 @@ public class 有效的括号 {
      * @return 是否匹配
      */
     public boolean isMap(String leftBracket, String rightBracket) {
-    	System.out.println("pre:" + leftBracket + "   new:" +  rightBracket);
 		if (leftBracket.equals("(")) {
 			return rightBracket.equals(")");
 		}
