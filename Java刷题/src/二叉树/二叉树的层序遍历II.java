@@ -1,7 +1,5 @@
 package 二叉树;
 
-import java.awt.Label;
-import java.lang.Thread.State;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +32,11 @@ import java.util.Stack;
  * */
 
 public class 二叉树的层序遍历II {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
 	public class TreeNode {
 	    int val;
 	    TreeNode left;
@@ -60,6 +63,12 @@ public class 二叉树的层序遍历II {
 			for (int i = 0; i < size; i++) {
 				TreeNode node = queue.poll();
 				subList.add(node.val);
+				if (node.left != null) {
+					queue.add(node.left);
+				}
+				if (node.right != null) {
+					queue.add(node.right);
+				}
 			}
 			stack.add(subList);
 		}
