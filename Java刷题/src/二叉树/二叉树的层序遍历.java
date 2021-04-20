@@ -20,8 +20,40 @@ public class 二叉树的层序遍历 {
 	    }
 	}
 	
-	// 使用队列
+	// 使用递归
     public List<List<Integer>> levelOrder(TreeNode root) {
+    	List<List<Integer>> list = new ArrayList<List<Integer>>();
+    	if (root == null) {
+			return list;
+		}
+    	recursion(root, list, 0);
+    	return list;
+    }
+    /**
+     * 递归
+     * @param 当前节点
+     * @param 结果列表
+     * @param 当前节点属于第几层
+     */
+    private void recursion(TreeNode node, List<List<Integer>> list, int leveal) {
+		if (leveal == list.size()) {
+			// 扩充
+			List<Integer> newSubList = new ArrayList<Integer>();
+			list.add(newSubList);
+		}
+		list.get(leveal).add(node.val);
+		if (node.left != null) {
+			this.recursion(node.left, list, leveal + 1);
+		}
+		if (node.right != null) {
+			this.recursion(node.right, list, leveal + 1);
+		}
+	}
+	
+	
+	
+	// 使用队列
+    public List<List<Integer>> levelOrder1(TreeNode root) {
     	Queue<TreeNode> queue = new ArrayDeque<TreeNode>();
     	List<List<Integer>> list = new ArrayList<List<Integer>>();
     	if (root == null) {

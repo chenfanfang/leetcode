@@ -66,11 +66,12 @@ public class 二叉树的中序遍历 {
     	List<Integer> list = new ArrayList<Integer>();
     	Stack<TreeNode> stack = new Stack<TreeNode>();
     	while (root != null || stack.isEmpty() == false) {
+    		// root != null
 			while (root != null) {
 				stack.push(root);
 				root = root.left;
 			}
-			// root 为 null, 则出栈
+			// root == null, 则出栈
 			root = stack.pop();
 			list.add(root.val);
 			root = root.right;
