@@ -22,6 +22,7 @@
 		B0AE270828E6CA0100AAC772 /* Solution_240.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE270728E6CA0100AAC772 /* Solution_240.swift */; };
 		B0AE270B28E6D63200AAC772 /* Solution_54.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE270A28E6D63200AAC772 /* Solution_54.swift */; };
 		B0AE270F28E6E61400AAC772 /* Solution_48.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE270E28E6E61400AAC772 /* Solution_48.swift */; };
+		B0AE271328E6F83500AAC772 /* Solution_25.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE271228E6F83500AAC772 /* Solution_25.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		B0AE270728E6CA0100AAC772 /* Solution_240.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_240.swift; sourceTree = "<group>"; };
 		B0AE270A28E6D63200AAC772 /* Solution_54.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_54.swift; sourceTree = "<group>"; };
 		B0AE270E28E6E61400AAC772 /* Solution_48.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_48.swift; sourceTree = "<group>"; };
+		B0AE271228E6F83500AAC772 /* Solution_25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution_25.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		B0AE26FA28E54C9D00AAC772 /* 刷题 */ = {
 			isa = PBXGroup;
 			children = (
+				B0AE271028E6F62200AAC772 /* 链表 */,
 				B0AE270228E6C43F00AAC772 /* 数组 */,
 				B0AE270128E6C43500AAC772 /* 其他 */,
 			);
@@ -254,6 +257,22 @@
 				B0AE270E28E6E61400AAC772 /* Solution_48.swift */,
 			);
 			path = "48. 旋转图像";
+			sourceTree = "<group>";
+		};
+		B0AE271028E6F62200AAC772 /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				B0AE271128E6F82400AAC772 /* 25. K 个一组翻转链表  */,
+			);
+			path = "链表";
+			sourceTree = "<group>";
+		};
+		B0AE271128E6F82400AAC772 /* 25. K 个一组翻转链表  */ = {
+			isa = PBXGroup;
+			children = (
+				B0AE271228E6F83500AAC772 /* Solution_25.swift */,
+			);
+			path = "25. K 个一组翻转链表 ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +348,7 @@
 				B0AE270B28E6D63200AAC772 /* Solution_54.swift in Sources */,
 				B005851828E2AA3C0024627C /* Traversal_UnifiedTemplate.swift in Sources */,
 				B0AE26FD28E54D2600AAC772 /* Solution_121.swift in Sources */,
+				B0AE271328E6F83500AAC772 /* Solution_25.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
