@@ -25,10 +25,18 @@ class Solution_102: NSObject {
             /// 当前层的数量
             let size: Int = queue.count
             /// 遍历次数
-            for index in 0..<size {
+            for _ in 0..<size {
                 let node = queue.removeLast()
-                var 
+                list.append(node.val)
+                if let leftNode = node.left {
+                    queue.insert(leftNode, at: 0)
+                }
+                if let rightNode = node.right {
+                    queue.insert(rightNode, at: 0)
+                }
             }
+            result.append(list)
         }
+        return result
     }
 }

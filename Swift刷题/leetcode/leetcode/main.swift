@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
+let obj = Solution_48()
+obj.test()
 
