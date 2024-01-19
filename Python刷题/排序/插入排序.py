@@ -1,4 +1,8 @@
+# 时间复杂度 O(n^2)
+
 from typing import List
+
+
 def sort(arr: List[int]):
     for i in range(1, len(arr)):
         # 新的数字
@@ -7,10 +11,10 @@ def sort(arr: List[int]):
         j = i - 1
         while j >= 0 and arr[j] > value:
             # 新的数向左移，那么也就是旧的数向右移动
-            arr[j+1] = arr[j]
+            arr[j + 1] = arr[j]
             j -= 1
 
-        arr[j+1] = value
+        arr[j + 1] = value
 
 
 def test():
